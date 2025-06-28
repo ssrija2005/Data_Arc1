@@ -24,7 +24,7 @@ function TeamMembers() {
         <TeamCard
           name="Varshni"
           role="Backend Developer"
-          photo="https://i.pravatar.cc/150?img=15"
+          photo="https://i.pravatar.cc/150?img=12"
         >
           Node.js • MongoDB
         </TeamCard>
