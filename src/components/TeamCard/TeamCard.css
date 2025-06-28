@@ -1,0 +1,33 @@
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #4caf50;
+  margin-bottom: 10px;
+}
+
+.team-role {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.team-extra {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 10px;
+}

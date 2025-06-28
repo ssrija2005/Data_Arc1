@@ -1,0 +1,114 @@
+/* Container */
+.todo-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: linear-gradient(135deg, #1e1e2f, #34345a);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+.todo-heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #f0f0f0;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #555;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.todo-form button {
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todo-form button:hover {
+  background: linear-gradient(135deg, #43a047, #388e3c);
+}
+
+/* Task List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.todo-list li {
+  background: #2b2b45;
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-style: italic;
+  color: #bbb;
+}
+
+/* Task Text */
+.todo-list li span {
+  flex: 1;
+  font-size: 18px;
+}
+
+/* Button Group */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Complete & Delete Buttons */
+.buttons button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #388e3c;
+}
+
+.buttons button.delete {
+  background-color: #f44336;
+}
+
+.buttons button.delete:hover {
+  background-color: #d32f2f;
+}

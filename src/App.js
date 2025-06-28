@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HelloReact from './pages/HelloReact';
+import TeamMembers from './pages/TeamMembers';
+import LikeButton from './components/TeamCard/LikeButton';
+import LiveForm from './components/TeamCard/LiveForm';
+import TodoList from './components/TeamCard/TodoList';
+import UserList from './components/TeamCard/UserList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="nav">
+  <ul className="nav-menu">
+    <li><Link to="/hello-react">Hello React</Link></li>
+    <li><Link to="/team-cards">Team Cards</Link></li>
+    <li><Link to="/day3">Day 3</Link></li>
+    <li><Link to="/todo">To-Do List</Link></li>
+    <li><Link to="/userlist">User List</Link></li>
+
+  </ul>
+</div>
+
+
+      <Routes>
+        <Route path="/hello-react" element={<HelloReact />} />
+        <Route path="/team-cards" element={<TeamMembers />} />
+        <Route path="/todo" element={<TodoList />} />
+        <Route path="/userlist" element={<UserList />} />
+        <Route path="/day3" element={
+           <div className="day3-container"><center>
+    <h1 className="day3-heading">🌟 Day 3: useState + Events</h1><tr></tr>
+    <tr></tr>
+    <LikeButton />
+    <LiveForm />
+    </center>
+  </div>
+  
+} />
+
+      
+      </Routes>
+    </Router>
   );
 }
 
